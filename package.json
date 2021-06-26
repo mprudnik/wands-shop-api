@@ -1,0 +1,22 @@
+{
+  "name": "wands-shop-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.18.0",
+    "fastify-mongodb": "^2.0.1",
+    "fastify-plugin": "^2.3.4",
+    "fastify-swagger": "^4.8.0",
+    "nodemon": "^2.0.7",
+    "pino-pretty": "^5.1.0"
+  }
+}
