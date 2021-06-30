@@ -24,7 +24,7 @@ server.register(swagger);
 
 server.register(api, { prefix: '/api' });
 
-server.listen(port, async () => {
+server.listen(port, port !== 8000 ? '0.0.0.0' : 'localhost', async () => {
   await setModelsValidation(server);
   server.log.info('Mongo validation set');
 });
