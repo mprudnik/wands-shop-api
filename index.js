@@ -7,7 +7,7 @@ import setModelsValidation from './src/model-validation/index.js';
 
 import api from './src/api/index.js';
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 const server = fastify({
   logger: {
