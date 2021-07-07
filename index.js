@@ -1,5 +1,6 @@
 import fastify from 'fastify';
 
+import ajv from './src/services/ajv/index.js';
 import mongo from './src/services/mongo/index.js';
 import swagger from './src/services/swagger/index.js';
 
@@ -19,6 +20,7 @@ const server = fastify({
   },
 });
 
+server.register(ajv);
 server.register(mongo);
 server.register(swagger);
 
