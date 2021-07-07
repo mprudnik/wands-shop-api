@@ -51,6 +51,7 @@ const schema = {
     required: [
       'name',
       'image',
+      'house',
       'manufacturer',
       'price',
       'wood',
