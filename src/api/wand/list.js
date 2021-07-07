@@ -4,6 +4,7 @@ import {
   manufacturers,
   sortOptions,
   woods,
+  houses,
 } from './schema.js';
 
 export const listHandler = async (Wand, req, reply) => {
@@ -28,9 +29,25 @@ const querystring = {
     limit: { type: 'integer', minimum: 1 },
     name: { type: 'string' },
     sort: { type: 'string', enum: sortOptions },
-    manufacturer: { type: 'string', enum: manufacturers },
-    wood: { type: 'string', enum: woods },
-    core: { type: 'string', enum: cores },
+    manufacturer: {
+      type: 'array',
+      items: { type: 'string', enum: manufacturers },
+    },
+    wood: { type: 'array', items: { type: 'string', enum: woods } },
+    core: { type: 'array', items: { type: 'string', enum: cores } },
+    house: { type: 'array', items: { type: 'string', enum: houses } },
+    price: {
+      type: 'array',
+      items: { type: 'number', minimum: 1 },
+      maxItems: 2,
+      minItems: 2,
+    },
+    length: {
+      type: 'array',
+      items: { type: 'number', minimum: 1 },
+      maxItems: 2,
+      minItems: 2,
+    },
   },
 };
 

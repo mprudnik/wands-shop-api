@@ -1,3 +1,5 @@
+export const houses = ['Gryffindor', 'Hufflepuff', 'Ravenclaw', 'Slytherin'];
+
 export const manufacturers = [
   'Peverell',
   'Olivander',
@@ -8,8 +10,8 @@ export const manufacturers = [
   'Jonker',
   'Quintana',
   'Wolfe',
-  'Steward'
-]
+  'Steward',
+];
 
 export const woods = [
   'Acacia',
@@ -18,19 +20,21 @@ export const woods = [
   'Beech',
   'Ceder',
   'Cherry',
+  'Elder',
   'Pear',
   'Pine',
   'Redwood',
 ];
 
 export const cores = [
+  'Thestral tail hair',
   'Unicorn hair',
   'Dragon heartstring',
   'Phoenix feather',
   'Troll whisker',
   'Thunderbird tail feather',
   'Basilisk horn',
-]
+];
 
 export const sortOptions = [
   '-price',
@@ -39,7 +43,7 @@ export const sortOptions = [
   '-name',
   '+length',
   '-length',
-]
+];
 
 export const wandResponse = {
   type: 'object',
@@ -52,7 +56,7 @@ export const wandResponse = {
     wood: { type: 'string' },
     core: { type: 'string' },
     length: { type: 'number' },
-  }
+  },
 };
 
 export const listWandResponse = {
@@ -62,6 +66,6 @@ export const listWandResponse = {
     rows: {
       type: 'array',
       items: wandResponse,
-    }
-  }
-}
+    },
+  },
+};
