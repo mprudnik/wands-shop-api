@@ -1,11 +1,10 @@
+import { listWandResponse, sortOptions } from './schema.js';
 import {
   cores,
-  listWandResponse,
-  manufacturers,
-  sortOptions,
   woods,
   houses,
-} from './schema.js';
+  manufacturers,
+} from '../../model-validation/wand/index.js';
 
 export const listHandler = async (Wand, req, reply) => {
   try {

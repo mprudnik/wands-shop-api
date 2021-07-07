@@ -1,6 +1,6 @@
-const houses = ['Gryffindor', 'Hufflepuff', 'Ravenclaw', 'Slytherin'];
+export const houses = ['Gryffindor', 'Hufflepuff', 'Ravenclaw', 'Slytherin'];
 
-const manufacturers = [
+export const manufacturers = [
   'Peverell',
   'Olivander',
   'Gregorovitch',
@@ -13,20 +13,28 @@ const manufacturers = [
   'Steward',
 ];
 
-const woods = [
+export const woods = [
   'Acacia',
   'Alder',
   'Apple',
   'Beech',
   'Ceder',
+  'Chestnut',
   'Cherry',
   'Elder',
+  'Elm',
+  'Fir',
+  'Hawthorn',
+  'Holly',
   'Pear',
   'Pine',
   'Redwood',
+  'Ash',
+  'Rosewood',
+  'Yew',
 ];
 
-const cores = [
+export const cores = [
   'Thestral tail hair',
   'Unicorn hair',
   'Dragon heartstring',
@@ -34,6 +42,7 @@ const cores = [
   'Troll whisker',
   'Thunderbird tail feather',
   'Basilisk horn',
+  'Veela hair',
 ];
 
 const schema = {
