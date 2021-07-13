@@ -13,6 +13,7 @@ export const wandResponse = {
     _id: { type: 'string' },
     name: { type: 'string' },
     image: { type: 'string' },
+    house: { type: 'string' },
     manufacturer: { type: 'string' },
     price: { type: 'number' },
     wood: { type: 'string' },
