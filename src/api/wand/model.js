@@ -9,7 +9,7 @@ export const generateModel = (db) => {
     const { skip, limit } = parsePagination(pagination);
     const sort = sortString ? parseSort(sortString) : { name: 1 };
 
-    const { manufacturer, wood, core, price, length } = query;
+    const { manufacturer, wood, core, price, length, house } = query;
     const matchQuery = {};
 
     if (name) matchQuery.name = { $regex: name, $options: 'i' };
@@ -17,7 +17,8 @@ export const generateModel = (db) => {
     if (wood) matchQuery.wood = { $in: wood };
     if (core) matchQuery.core = { $in: core };
     if (price) matchQuery.price = { $gt: price[0], $lt: price[1] };
-    if (length) matchQuery.price = { $gt: length[0], $lt: length[1] };
+    if (length) matchQuery.length = { $gt: length[0], $lt: length[1] };
+    if (house) matchQuery.house = { $in: house };
 
     const [result] = await wands
       .aggregate([
